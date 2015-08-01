@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5986E4ADBD9E7BCB72303725 /* libPods-RollOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DB0766A18EE17E8E175074 /* libPods-RollOut.a */; };
+		D34063E91B6D36150045A96F /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34063E81B6D36150045A96F /* AccountViewController.m */; };
+		D34063EC1B6D36290045A96F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34063EB1B6D36290045A96F /* IntroViewController.m */; };
+		D34063EE1B6D370C0045A96F /* TwitterLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D34063ED1B6D370C0045A96F /* TwitterLogo.png */; };
+		D34063F71B6D3C7D0045A96F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34063F31B6D3C7D0045A96F /* Fabric.framework */; };
+		D34063F81B6D3C7D0045A96F /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34063F41B6D3C7D0045A96F /* TwitterKit.framework */; };
+		D34063F91B6D3C7D0045A96F /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D34063F51B6D3C7D0045A96F /* TwitterKitResources.bundle */; };
+		D34063FA1B6D3C7D0045A96F /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34063F61B6D3C7D0045A96F /* TwitterCore.framework */; };
+		D34063FD1B6D5B050045A96F /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34063FC1B6D5B050045A96F /* ScanViewController.m */; };
+		D34063FF1B6D63420045A96F /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D34063FE1B6D63420045A96F /* blue.png */; };
 		D3BF95DF1B69C7270078FDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF95DE1B69C7270078FDA8 /* main.m */; };
 		D3BF95E21B69C7270078FDA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF95E11B69C7270078FDA8 /* AppDelegate.m */; };
 		D3BF95E51B69C7270078FDA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF95E41B69C7270078FDA8 /* ViewController.m */; };
@@ -15,6 +24,9 @@
 		D3BF95EA1B69C7270078FDA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BF95E91B69C7270078FDA8 /* Images.xcassets */; };
 		D3BF95ED1B69C7270078FDA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3BF95EB1B69C7270078FDA8 /* LaunchScreen.xib */; };
 		D3BF95F91B69C7270078FDA8 /* RollOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF95F81B69C7270078FDA8 /* RollOutTests.m */; };
+		D3BF96031B6A87260078FDA8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BF96021B6A87260078FDA8 /* AVFoundation.framework */; };
+		D3BF96071B6A8EC90078FDA8 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3BF96061B6A8EC90078FDA8 /* sound.mp3 */; };
+		D3BF960A1B6A92760078FDA8 /* DefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BF96091B6A92760078FDA8 /* DefaultsHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +42,18 @@
 /* Begin PBXFileReference section */
 		3680277FD5B82634C74C1AEE /* Pods-RollOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-RollOut/Pods-RollOut.release.xcconfig"; sourceTree = "<group>"; };
 		6F414EF9628400C4D264BEA3 /* Pods-RollOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RollOut/Pods-RollOut.debug.xcconfig"; sourceTree = "<group>"; };
+		D34063E71B6D36150045A96F /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		D34063E81B6D36150045A96F /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		D34063EA1B6D36290045A96F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		D34063EB1B6D36290045A96F /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		D34063ED1B6D370C0045A96F /* TwitterLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterLogo.png; sourceTree = "<group>"; };
+		D34063F31B6D3C7D0045A96F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		D34063F41B6D3C7D0045A96F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		D34063F51B6D3C7D0045A96F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		D34063F61B6D3C7D0045A96F /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		D34063FB1B6D5B050045A96F /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		D34063FC1B6D5B050045A96F /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		D34063FE1B6D63420045A96F /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 		D3BF95D91B69C7270078FDA8 /* RollOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BF95DD1B69C7270078FDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3BF95DE1B69C7270078FDA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +67,10 @@
 		D3BF95F21B69C7270078FDA8 /* RollOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollOutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BF95F71B69C7270078FDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3BF95F81B69C7270078FDA8 /* RollOutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollOutTests.m; sourceTree = "<group>"; };
+		D3BF96021B6A87260078FDA8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D3BF96061B6A8EC90078FDA8 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		D3BF96081B6A92760078FDA8 /* DefaultsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsHelper.h; sourceTree = "<group>"; };
+		D3BF96091B6A92760078FDA8 /* DefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsHelper.m; sourceTree = "<group>"; };
 		F5DB0766A18EE17E8E175074 /* libPods-RollOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RollOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,7 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34063FA1B6D3C7D0045A96F /* TwitterCore.framework in Frameworks */,
+				D3BF96031B6A87260078FDA8 /* AVFoundation.framework in Frameworks */,
 				5986E4ADBD9E7BCB72303725 /* libPods-RollOut.a in Frameworks */,
+				D34063F71B6D3C7D0045A96F /* Fabric.framework in Frameworks */,
+				D34063F81B6D3C7D0045A96F /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,7 @@
 		5BFBD0D50AE4B8B70547D540 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3BF96021B6A87260078FDA8 /* AVFoundation.framework */,
 				F5DB0766A18EE17E8E175074 /* libPods-RollOut.a */,
 			);
 			name = Frameworks;
@@ -109,6 +142,21 @@
 				D3BF95E11B69C7270078FDA8 /* AppDelegate.m */,
 				D3BF95E31B69C7270078FDA8 /* ViewController.h */,
 				D3BF95E41B69C7270078FDA8 /* ViewController.m */,
+				D3BF96061B6A8EC90078FDA8 /* sound.mp3 */,
+				D3BF96081B6A92760078FDA8 /* DefaultsHelper.h */,
+				D3BF96091B6A92760078FDA8 /* DefaultsHelper.m */,
+				D34063EA1B6D36290045A96F /* IntroViewController.h */,
+				D34063EB1B6D36290045A96F /* IntroViewController.m */,
+				D34063E71B6D36150045A96F /* AccountViewController.h */,
+				D34063E81B6D36150045A96F /* AccountViewController.m */,
+				D34063FB1B6D5B050045A96F /* ScanViewController.h */,
+				D34063FC1B6D5B050045A96F /* ScanViewController.m */,
+				D34063FE1B6D63420045A96F /* blue.png */,
+				D34063F31B6D3C7D0045A96F /* Fabric.framework */,
+				D34063F41B6D3C7D0045A96F /* TwitterKit.framework */,
+				D34063F51B6D3C7D0045A96F /* TwitterKitResources.bundle */,
+				D34063F61B6D3C7D0045A96F /* TwitterCore.framework */,
+				D34063ED1B6D370C0045A96F /* TwitterLogo.png */,
 				D3BF95E61B69C7270078FDA8 /* Main.storyboard */,
 				D3BF95E91B69C7270078FDA8 /* Images.xcassets */,
 				D3BF95EB1B69C7270078FDA8 /* LaunchScreen.xib */,
@@ -155,6 +203,7 @@
 				D3BF95D61B69C7270078FDA8 /* Frameworks */,
 				D3BF95D71B69C7270078FDA8 /* Resources */,
 				A1EBBD164E3B945C73A91F72 /* Copy Pods Resources */,
+				D34063F21B6D3C580045A96F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -225,9 +274,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34063EE1B6D370C0045A96F /* TwitterLogo.png in Resources */,
 				D3BF95E81B69C7270078FDA8 /* Main.storyboard in Resources */,
 				D3BF95ED1B69C7270078FDA8 /* LaunchScreen.xib in Resources */,
 				D3BF95EA1B69C7270078FDA8 /* Images.xcassets in Resources */,
+				D34063F91B6D3C7D0045A96F /* TwitterKitResources.bundle in Resources */,
+				D34063FF1B6D63420045A96F /* blue.png in Resources */,
+				D3BF96071B6A8EC90078FDA8 /* sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +324,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RollOut/Pods-RollOut-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D34063F21B6D3C580045A96F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3fa3b879ff84fe3e6b7cec24391ebf08925f7e25 e350f7fee54640506ffa6f35f0b2f4ddde3f937632151908bd93d3f2308fc93e";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -281,6 +347,10 @@
 				D3BF95E51B69C7270078FDA8 /* ViewController.m in Sources */,
 				D3BF95E21B69C7270078FDA8 /* AppDelegate.m in Sources */,
 				D3BF95DF1B69C7270078FDA8 /* main.m in Sources */,
+				D34063E91B6D36150045A96F /* AccountViewController.m in Sources */,
+				D34063FD1B6D5B050045A96F /* ScanViewController.m in Sources */,
+				D3BF960A1B6A92760078FDA8 /* DefaultsHelper.m in Sources */,
+				D34063EC1B6D36290045A96F /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +477,10 @@
 			baseConfigurationReference = 6F414EF9628400C4D264BEA3 /* Pods-RollOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RollOut",
+				);
 				INFOPLIST_FILE = RollOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +492,10 @@
 			baseConfigurationReference = 3680277FD5B82634C74C1AEE /* Pods-RollOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RollOut",
+				);
 				INFOPLIST_FILE = RollOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

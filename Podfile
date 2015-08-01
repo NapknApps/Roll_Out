@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'RollOut' do
-pod 'Firebase', '>= 2.3.3'
+pod 'Firebase', '>= 2.3.2'
 end
 
 target 'RollOutTests' do
