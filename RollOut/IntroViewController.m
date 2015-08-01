@@ -39,14 +39,11 @@
 - (void)setUpIntro
 {
     self.explanations = [NSArray arrayWithObjects:
-                         [NSString stringWithFormat:@"Remember letters?"],
-                         [NSString stringWithFormat:@"Messages used to take a while to \"Send\" & \"Receive\""],
-                         [NSString stringWithFormat:@"There was something really magical about it."],
-                         [NSString stringWithFormat:@"Let's bring it back."],
-                         [NSString stringWithFormat:@"Envoyer lets you send letters to your friends."],
-                         [NSString stringWithFormat:@"The letters take a few days to send."],
-                         [NSString stringWithFormat:@"Your whole conversation sends back and forth."],
-                         [NSString stringWithFormat:@"And no notifications. You'll have to \"check the mail\" just like the old times."],
+                         [NSString stringWithFormat:@"Waking up is no fun."],
+                         [NSString stringWithFormat:@"Publicly shaming yourself is worse."],
+                         [NSString stringWithFormat:@"So what if everytime you didn't wake up..."],
+                         [NSString stringWithFormat:@"you had to tell your friends?"],
+                         [NSString stringWithFormat:@"Let's try it!"],
                          nil];
     
     for (int i = 0; i < self.explanations.count; i++) {
