@@ -8,6 +8,7 @@
 
 #import "ScanViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "DefaultsHelper.h"
 
 @interface ScanViewController () <AVCaptureMetadataOutputObjectsDelegate>
 {
@@ -18,7 +19,7 @@
     AVCaptureVideoPreviewLayer *_prevLayer;
     
     UIView *_highlightView;
-    UILabel *_label;
+    UITextView *_textView;
 }
 @end
 
@@ -30,20 +31,26 @@
 {
     [super viewDidLoad];
     
+    [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(checkTweetTime)
+                                   userInfo:nil
+                                    repeats:YES];
+
+    
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 40, self.view.frame.size.width - 40, 400)];
+    
+    [_textView setFont:[UIFont fontWithName:@"Avenir" size:32]];
+    [_textView setTextColor:[UIColor whiteColor]];
+    _textView.backgroundColor = [UIColor clearColor];
+    _textView.userInteractionEnabled = NO;
+
+    
     _highlightView = [[UIView alloc] init];
     _highlightView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleBottomMargin;
     _highlightView.layer.borderColor = [UIColor greenColor].CGColor;
     _highlightView.layer.borderWidth = 3;
     [self.view addSubview:_highlightView];
-    
-    _label = [[UILabel alloc] init];
-    _label.frame = CGRectMake(0, self.view.bounds.size.height - 40, self.view.bounds.size.width, 40);
-    _label.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-    _label.backgroundColor = [UIColor colorWithWhite:0.15 alpha:0.65];
-    _label.textColor = [UIColor whiteColor];
-    _label.textAlignment = NSTextAlignmentCenter;
-    _label.text = @"(none)";
-    [self.view addSubview:_label];
     
     _session = [[AVCaptureSession alloc] init];
     _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -67,10 +74,17 @@
     _prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     [self.view.layer addSublayer:_prevLayer];
     
+    [self.view addSubview:_textView];
+
+    
     [_session startRunning];
     
     [self.view bringSubviewToFront:_highlightView];
-    [self.view bringSubviewToFront:_label];
+}
+
+- (void)checkTweetTime
+{
+    [_textView setText:[NSString stringWithFormat:@"Scan your shampoo to prove you're awake. Quick! You only have %i seconds left!", (int)[[DefaultsHelper tweetDate] timeIntervalSinceNow]]];
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
@@ -95,12 +109,12 @@
         
         if (detectionString != nil)
         {
-            _label.text = detectionString;
             [self.delegate scanViewControllerDidFindBarcode:self];
             break;
         }
-        else
-            _label.text = @"(none)";
+        else {
+            
+        }
     }
     
     _highlightView.frame = highlightViewRect;

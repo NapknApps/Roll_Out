@@ -29,6 +29,19 @@
 //    logInButton.center = self.view.center;
 //    [self.view addSubview:logInButton];
 
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 40, self.view.frame.size.width - 40, self.view.frame.size.height - 160)];
+    
+    [textView setFont:[UIFont fontWithName:@"Avenir" size:32]];
+    [textView setTextColor:[UIColor whiteColor]];
+    textView.backgroundColor = [UIColor clearColor];
+    textView.userInteractionEnabled = YES;
+    textView.editable = NO;
+
+    [textView setText:@"When you set an alarm be sure to turn your volume up and don't leave the app (you can lock the screen). Sign in with the account that will tweet when you sleep in to get started. You've got this!"];
+    [self.view addSubview:textView];
+
+    
+    
     
     self.twitterLogoBackgroundView.layer.cornerRadius = self.twitterLogoBackgroundView.frame.size.height/2;
 }

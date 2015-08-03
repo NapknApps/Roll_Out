@@ -10,6 +10,7 @@
 
 #define kIntroShown @"kIntroShown"
 #define kAlarmDate @"kAlarmDate"
+#define kTweetDate @"kTweetDate"
 
 @implementation DefaultsHelper
 
@@ -32,6 +33,17 @@
 + (void)setAlarmDate:(NSDate *)alarmDate
 {
     [[NSUserDefaults standardUserDefaults] setObject:alarmDate forKey:kAlarmDate];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (NSDate *)tweetDate
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:kTweetDate];
+}
+
++ (void)setTweetDate:(NSDate *)tweetDate
+{
+    [[NSUserDefaults standardUserDefaults] setObject:tweetDate forKey:kTweetDate];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

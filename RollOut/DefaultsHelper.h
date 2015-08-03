@@ -16,4 +16,7 @@
 + (NSDate *)alarmDate;
 + (void)setAlarmDate:(NSDate *)alarmDate;
 
++ (NSDate *)tweetDate;
++ (void)setTweetDate:(NSDate *)tweetDate;
+
 @end
